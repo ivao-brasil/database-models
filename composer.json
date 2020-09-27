@@ -1,0 +1,39 @@
+{
+  "name": "ivao-brasil/database-models",
+  "description": "IVAO Brasil database models",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "IVAO Brasil",
+      "email": "br-web@ivao.aero"
+    }
+  ],
+  "require": {
+    "php": "^7.3",
+    "laravel/framework": "^8.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "IvaoBrasil\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "IvaoBrasil\\IvaoBrasilDatabaseServiceProvider"
+      ]
+    }
+  },
+  "scripts": {
+    "test": "php vendor/bin/phpunit"
+  }
+}
