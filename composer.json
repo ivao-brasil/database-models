@@ -19,7 +19,7 @@
   },
   "autoload": {
     "classmap": [
-      "src/migrations"
+      "migrations/"
     ],
     "psr-4": {
       "IvaoBrasil\\": "src/"
