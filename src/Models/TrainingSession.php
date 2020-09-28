@@ -12,8 +12,11 @@ class TrainingSession extends Model
     protected $visible = [
         "id", "rating", "type", "occurrenceDate", "local", "owner"
     ];
-    protected $casts = [
-        'occurrenceDate' => 'DateTime',
+    protected $fillable = [
+        "rating", "type", "occurrenceDate", "local", "owner_vid"
+    ];
+    protected $dates = [
+        'occurrenceDate'
     ];
 
     public function owner()
