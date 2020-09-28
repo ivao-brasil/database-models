@@ -10,7 +10,7 @@ class TrainingSession extends Model
     use HasFactory;
 
     protected $visible = [
-        "rating", "type", "occurrenceDate", "local"
+        "id", "rating", "type", "occurrenceDate", "local", "owner"
     ];
     protected $casts = [
         'occurrenceDate' => 'DateTime',
