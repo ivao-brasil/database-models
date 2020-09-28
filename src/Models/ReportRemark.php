@@ -17,4 +17,9 @@ class ReportRemark extends Model
     protected $visible = [
         "id", "report_id", "author_vid", "contents", "created_at", "updated_at"
     ];
+
+    public function author()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
