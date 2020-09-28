@@ -12,11 +12,11 @@ class Report extends Model
     use HasFactory;
 
     protected $fillable = [
-        "connectionType", "callsign", "status", "owner_vid", "session_id"
+        "connectionType", "callsign", "status", "owner_vid", "session_id", "remarks"
     ];
 
     protected $visible = [
-        "id", "connectionType", "callsign", "status", "session", "owner", "created_at", "updated_at", "session_id"
+        "id", "connectionType", "callsign", "status", "session", "owner", "created_at", "updated_at", "session_id", "remarks"
     ];
 
     public function session()
@@ -32,5 +32,10 @@ class Report extends Model
     public function getOwner(): User
     {
         return $this->getRelation('owner');
+    }
+
+    public function remarks()
+    {
+        return $this->hasMany(ReportRemark::class);
     }
 }
