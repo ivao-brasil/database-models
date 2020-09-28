@@ -18,6 +18,9 @@
     "fzaninotto/faker": "^1.9.1"
   },
   "autoload": {
+    "classmap": [
+      "src/migrations"
+    ],
     "psr-4": {
       "IvaoBrasil\\": "src/"
     }
