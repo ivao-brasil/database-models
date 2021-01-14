@@ -17,4 +17,9 @@ class Manual extends Model
     protected $visible = [
         "id", "title", "description", "author_vid", "language", "file_path", "is_visible", "created_at", "updated_at"
     ];
+
+    public function tags()
+    {
+        return $this->belongsToMany(Tag::class);
+    }
 }
