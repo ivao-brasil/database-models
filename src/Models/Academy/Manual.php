@@ -11,11 +11,11 @@ class Manual extends Model
     protected $table = "academy_manuals";
 
     protected $fillable = [
-        "title", "description", "author_vid", "language", "file_path", "is_visible", "created_at", "updated_at"
+        "title", "description", "language", "file_path", "is_visible", "created_at", "updated_at"
     ];
 
     protected $visible = [
-        "id", "title", "description", "author_vid", "language", "file_path", "is_visible", "tags", "created_at", "updated_at"
+        "id", "title", "description", "language", "file_path", "is_visible", "tags", "created_at", "updated_at"
     ];
 
     public function tags()
