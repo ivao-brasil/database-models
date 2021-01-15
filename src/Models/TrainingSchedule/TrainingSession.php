@@ -4,6 +4,7 @@ namespace IvaoBrasil\Models\TrainingSchedule;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use IvaoBrasil\Models\Core\User;
 
 class TrainingSession extends Model
 {

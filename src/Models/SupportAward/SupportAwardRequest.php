@@ -5,6 +5,7 @@ namespace IvaoBrasil\Models\SupportAward;
 
 
 use Illuminate\Database\Eloquent\Model;
+use IvaoBrasil\Models\Core\User;
 
 class SupportAwardRequest extends Model
 {

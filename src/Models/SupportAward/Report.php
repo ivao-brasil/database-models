@@ -6,6 +6,8 @@ namespace IvaoBrasil\Models\SupportAward;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use IvaoBrasil\Models\Core\User;
+use IvaoBrasil\Models\TrainingSchedule\TrainingSession;
 
 class Report extends Model
 {

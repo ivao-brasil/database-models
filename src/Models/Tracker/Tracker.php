@@ -15,10 +15,11 @@ class Tracker extends Model
 
     public function rules()
     {
-        return $this->hasMany('App\Models\Rule', 'id_tracker');
+        return $this->hasMany(Rule::class, 'id_tracker');
     }
 
-    public function data() {
-        return $this->hasMany('App\Models\TrackerData', 'id_tracker');
+    public function data()
+    {
+        return $this->hasMany(TrackerData::class, 'id_tracker');
     }
 }
