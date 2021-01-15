@@ -1,10 +1,10 @@
 <?php
 
-namespace IvaoBrasil\Factories;
+namespace IvaoBrasil\Factories\SupportAward;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use IvaoBrasil\Models\Report;
-use IvaoBrasil\Models\User;
+use IvaoBrasil\Models\SupportAward\Report;
+use IvaoBrasil\Models\Core\User;
 
 class ReportFactory extends Factory
 {

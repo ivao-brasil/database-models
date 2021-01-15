@@ -1,14 +1,13 @@
 <?php
 
 
-namespace IvaoBrasil\Models;
+namespace IvaoBrasil\Models\SupportAward;
 
 
 use Illuminate\Database\Eloquent\Model;
 
 class ReportRemark extends Model
 {
-    protected $table = "report_remarks";
 
     protected $fillable = [
         "report_id", "author_vid", "contents"

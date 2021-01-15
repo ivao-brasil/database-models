@@ -1,10 +1,10 @@
 <?php
 
 
-namespace IvaoBrasil\Factories;
+namespace IvaoBrasil\Factories\Core;
 
-use IvaoBrasil\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use IvaoBrasil\Models\Core\User;
 
 class UserFactory extends Factory
 {

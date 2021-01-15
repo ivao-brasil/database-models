@@ -1,6 +1,6 @@
 <?php
 
-namespace IvaoBrasil\Models;
+namespace IvaoBrasil\Models\Core;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
