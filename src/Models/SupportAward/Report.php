@@ -1,7 +1,7 @@
 <?php
 
 
-namespace IvaoBrasil\Models;
+namespace IvaoBrasil\Models\SupportAward;
 
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;

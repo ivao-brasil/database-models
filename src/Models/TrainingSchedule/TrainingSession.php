@@ -1,6 +1,6 @@
 <?php
 
-namespace IvaoBrasil\Models;
+namespace IvaoBrasil\Models\TrainingSchedule;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;

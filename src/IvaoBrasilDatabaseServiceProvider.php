@@ -10,6 +10,14 @@ class IvaoBrasilDatabaseServiceProvider extends ServiceProvider
     public function boot()
     {
         Schema::defaultStringLength(191);
-        $this->loadMigrationsFrom(__DIR__ . '/../migrations');
+        $this->loadMigrations();
+    }
+
+    private function loadMigrations()
+    {
+        $mainPath = __DIR__ . '/../migrations/';
+        $directories = glob($mainPath . '/*', GLOB_ONLYDIR);
+        $paths = array_merge([$mainPath], $directories);
+        $this->loadMigrationsFrom($paths);
     }
 }
