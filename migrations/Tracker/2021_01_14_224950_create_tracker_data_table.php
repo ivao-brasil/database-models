@@ -22,7 +22,6 @@ class CreateTrackerDataTable extends Migration
                 ->onUpdate('CASCADE')
                 ->onDelete('CASCADE');
             $table->string('vid', 6)->nullable(false);
-            $table->foreignId('vid')->constrained('users', 'vid')->onUpdate('CASCADE')->onDelete('CASCADE');
             $table->string('callsign', 30)->nullable(false);
             $table->enum('client_type', ['ATC', 'PILOT'])->nullable(false);
             $table->string('departure', 4);
