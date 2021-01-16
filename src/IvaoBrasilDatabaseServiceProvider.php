@@ -2,8 +2,9 @@
 
 namespace IvaoBrasil;
 
-use Illuminate\Support\ServiceProvider;
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\ServiceProvider;
 
 class IvaoBrasilDatabaseServiceProvider extends ServiceProvider
 {
@@ -11,6 +12,7 @@ class IvaoBrasilDatabaseServiceProvider extends ServiceProvider
     {
         Schema::defaultStringLength(191);
         $this->loadMigrations();
+        $this->loadFactories();
     }
 
     private function loadMigrations()
@@ -19,5 +21,12 @@ class IvaoBrasilDatabaseServiceProvider extends ServiceProvider
         $directories = glob($mainPath . '/*', GLOB_ONLYDIR);
         $paths = array_merge([$mainPath], $directories);
         $this->loadMigrationsFrom($paths);
+    }
+
+    private function loadFactories()
+    {
+        Factory::guessFactoryNamesUsing(function (string $modelName) {
+            return str_replace('IvaoBrasil\\Models\\', 'IvaoBrasil\\Factories\\', $modelName) . 'Factory';
+        });
     }
 }

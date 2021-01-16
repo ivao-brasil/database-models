@@ -5,6 +5,7 @@ namespace IvaoBrasil\Factories\SupportAward;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use IvaoBrasil\Models\SupportAward\Report;
 use IvaoBrasil\Models\Core\User;
+use IvaoBrasil\Models\TrainingSchedule\TrainingSession;
 
 class ReportFactory extends Factory
 {
@@ -23,11 +24,11 @@ class ReportFactory extends Factory
     public function definition()
     {
         return [
-            "id" => $this->faker->numberBetween(),
             "connectionType" => "PILOT",
             "callsign" => $this->faker->text(8),
             "status" => $this->faker->randomElement(["VALIDATING", "REJECTED", "APPROVED"]),
-            "owner_vid" => User::factory()
+            "owner_vid" => User::factory(),
+            "session_id" => TrainingSession::factory()
         ];
     }
 }
