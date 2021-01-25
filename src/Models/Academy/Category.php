@@ -15,7 +15,7 @@ class Category extends Model
     ];
 
     protected $visible = [
-        "id", "name", "tags", "created_at", "updated_at"
+        "id", "name", "tags", "manuals", "created_at", "updated_at"
     ];
 
     public function tags()
@@ -25,6 +25,6 @@ class Category extends Model
 
     public function manuals()
     {
-        return $this->belongsToMany(Tag::class, 'academy_categories_manuals');
+        return $this->belongsToMany(Category::class, 'academy_categories_manuals');
     }
 }
