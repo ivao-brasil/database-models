@@ -25,6 +25,6 @@ class Category extends Model
 
     public function manuals()
     {
-        return $this->belongsToMany(Category::class, 'academy_categories_manuals');
+        return $this->belongsToMany(Manual::class, 'academy_categories_manuals');
     }
 }
