@@ -22,4 +22,9 @@ class Category extends Model
     {
         return $this->belongsToMany(Tag::class, 'academy_categories_tags');
     }
+
+    public function manuals()
+    {
+        return $this->belongsToMany(Tag::class, 'academy_categories_manuals');
+    }
 }
