@@ -10,11 +10,11 @@ class ApiKey extends Model
     use HasFactory;
 
     protected $visible = [
-        "id", "key", "domain"
+        "id", "key", "domain", "limit"
     ];
 
     protected $fillable = [
-        "key", "domain"
+        "key", "domain", "limit"
     ];
 
     protected $table = "api_key";
