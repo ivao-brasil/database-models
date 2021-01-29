@@ -1,6 +1,6 @@
 <?php
 
-namespace IvaoBrasil\Models\Ais;
+namespace IvaoBrasil\Models\Api;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
