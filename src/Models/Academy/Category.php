@@ -4,10 +4,13 @@
 namespace IvaoBrasil\Models\Academy;
 
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Category extends Model
 {
+    use HasFactory;
+
     protected $table = "academy_categories";
 
     protected $fillable = [
