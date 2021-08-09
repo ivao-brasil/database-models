@@ -9,7 +9,7 @@ use IvaoBrasil\Models\Core\User;
 class StaffAppointment extends Model {
     use HasFactory;
 
-    protected $visible = ['vid', 'position', 'appointed_at', 'status'];
+    protected $visible = ['id', vid', 'position', 'appointed_at', 'status'];
 
     protected $fillable = ['vid', 'position', 'status', 'appointed_at'];
 
