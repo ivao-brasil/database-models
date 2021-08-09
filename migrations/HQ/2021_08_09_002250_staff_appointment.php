@@ -13,7 +13,7 @@ class StaffAppointment extends Migration
      */
     public function up()
     {
-        Schema::create('staff_appointment', function (Blueprint $table) {
+        Schema::create('staff_appointments', function (Blueprint $table) {
            $table->id();
            $table->foreignId('vid')->constrained('users', 'vid');
            $table->string('position', 16);
@@ -30,6 +30,6 @@ class StaffAppointment extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('staff_appointment');
+        Schema::dropIfExists('staff_appointments');
     }
 }
