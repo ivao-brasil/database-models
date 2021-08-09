@@ -11,7 +11,7 @@ class StaffAppointment extends Model {
 
     protected $visible = ['vid', 'position', 'appointed_at', 'status'];
 
-    protected $fillable = ['vid', 'position', 'status'];
+    protected $fillable = ['vid', 'position', 'status', 'appointed_at'];
 
     protected $dates = [
         'appointed_at'
