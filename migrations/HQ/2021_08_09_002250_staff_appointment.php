@@ -15,7 +15,7 @@ class StaffAppointment extends Migration
     {
         Schema::create('staff_appointment', function (Blueprint $table) {
            $table->id();
-           $table->string('vid', 6);
+           $table->foreignId('vid')->constrained('users', 'vid');
            $table->string('position', 16);
            $table->dateTime('appointed_at')->useCurrent();
            $table->enum('status', ['onTrial', 'effectived']);
