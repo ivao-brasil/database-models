@@ -21,6 +21,7 @@ class TrackerData extends Model
         'last_position_time',
         'total_time',
         'first_position',
-        'last_position'
+        'last_position',
+        'metadata'
     ];
 }
