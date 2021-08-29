@@ -21,8 +21,8 @@ class CreateEventsTable extends Migration
             $table->integer('status');
             $table->integer('atc_reports');
             $table->integer('pilot_reports');
-            $table->foreignId('pilot_award_id')->constrained('division_awards', 'id');;
-            $table->foreignId('atc_award_id')->constrained('division_awards', 'id');;
+            $table->foreignId('pilot_award_id')->constrained('division_awards', 'id');
+            $table->foreignId('atc_award_id')->constrained('division_awards', 'id');
             $table->dateTime('start_at');
             $table->dateTime('end_at');
             $table->foreignId('created_by')->constrained('users', 'vid');
