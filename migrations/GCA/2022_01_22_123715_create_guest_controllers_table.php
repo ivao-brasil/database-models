@@ -15,8 +15,8 @@ class CreateGuestControllersTable extends Migration
     {
         Schema::create('guest_controllers', function (Blueprint $table) {
             $table->id();
-            $table->int('vid');
-            $table->int('added_by');
+            $table->integer('vid');
+            $table->integer('added_by');
             $table->timestamps();
         });
     }
