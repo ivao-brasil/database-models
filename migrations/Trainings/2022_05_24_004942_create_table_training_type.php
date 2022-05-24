@@ -13,7 +13,7 @@ class CreateTableTrainingType extends Migration
      */
     public function up()
     {
-        Schema::create('table_training_type', function (Blueprint $table) {
+        Schema::create('training_types', function (Blueprint $table) {
             $table->id();
             $table->string('name');
             $table->enum('type', ['PILOT', 'ATC']);
@@ -29,6 +29,6 @@ class CreateTableTrainingType extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('table_training_type');
+        Schema::dropIfExists('training_types');
     }
 }
