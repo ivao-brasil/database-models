@@ -1,10 +1,11 @@
 <?php
 
 namespace IvaoBrasil\Models\Trainings;
+use Illuminate\Database\Eloquent\Model;
 
 use IvaoBrasil\Models\Core\User;
 
-class Trainings
+class Trainings extends Model
 {
     public function trainer() {
         return $this->belongsTo(User::class);
