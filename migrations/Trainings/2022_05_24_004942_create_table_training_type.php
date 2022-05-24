@@ -16,6 +16,7 @@ class CreateTableTrainingType extends Migration
         Schema::create('training_types', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->string('description');
             $table->enum('type', ['PILOT', 'ATC']);
             $table->smallInteger('minimum_rating');
             $table->timestamps();
