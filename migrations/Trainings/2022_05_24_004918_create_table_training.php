@@ -21,7 +21,7 @@ class CreateTableTraining extends Migration
             $table->enum('status', ['requested', 'finished', 'cancelled'])->default('requested');
             $table->text('internal_comments')->nullable();
             $table->text('user_comments')->nullable();
-            $table->dateTime('end_date')->nullable();
+            $table->timestamp('end_date')->nullable();
             $table->timestamps();
         });
     }

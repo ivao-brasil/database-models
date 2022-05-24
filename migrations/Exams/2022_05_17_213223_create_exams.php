@@ -22,7 +22,7 @@ class CreateExams extends Migration
             $table->smallInteger('score')->nullable();
             $table->text('validator_comments')->nullable();
             $table->text('user_comments')->nullable();
-            $table->dateTime('end_date')->nullable();
+            $table->timestamp('end_date')->nullable();
             $table->timestamps();
         });
     }
