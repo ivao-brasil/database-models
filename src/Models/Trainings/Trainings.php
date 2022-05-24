@@ -16,6 +16,6 @@ class Trainings extends Model
     }
 
     public function type() {
-        return $this->hasOne(TrainingType::class, 'training_type_id');
+        return $this->hasOne(TrainingType::class, 'id','training_type_id');
     }
 }
