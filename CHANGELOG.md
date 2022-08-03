@@ -1,3 +1,10 @@
+## [2.7.3](https://github.com/ivao-brasil/database-models/compare/v2.7.2...v2.7.3) (2022-08-03)
+
+
+### Bug Fixes
+
+* **training_session:** fix models and migration ([152c724](https://github.com/ivao-brasil/database-models/commit/152c724ac567d82ed11b1dc673870b0185d8c7f1))
+
 ## [2.7.2](https://github.com/ivao-brasil/database-models/compare/v2.7.1...v2.7.2) (2022-08-03)
 
 
