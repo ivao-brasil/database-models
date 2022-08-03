@@ -14,7 +14,7 @@ class TrainingSession extends Model
         "id", "rating", "type", "occurrenceDate", "local", "owner"
     ];
     protected $fillable = [
-        "rating", "type", "occurrenceDate", "local", "owner_vid"
+        "rating", "type", "occurrenceDate", "local", "owner_vid", "member_vid"
     ];
     protected $dates = [
         'occurrenceDate'
@@ -22,6 +22,10 @@ class TrainingSession extends Model
 
     public function owner()
     {
+        return $this->belongsTo(User::class);
+    }
+
+    public function member() {
         return $this->belongsTo(User::class);
     }
 }
