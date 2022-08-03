@@ -11,7 +11,7 @@ class TrainingSession extends Model
     use HasFactory;
 
     protected $visible = [
-        "id", "rating", "type", "occurrenceDate", "local", "owner"
+        "id", "rating", "type", "occurrenceDate", "local", "owner", "member"
     ];
     protected $fillable = [
         "rating", "type", "occurrenceDate", "local", "owner_vid", "member_vid"

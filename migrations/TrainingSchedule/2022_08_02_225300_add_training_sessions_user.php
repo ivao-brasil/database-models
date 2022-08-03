@@ -14,7 +14,7 @@ class AddTrainingSessionsUser extends Migration
     public function up()
     {
         Schema::table('training_sessions', function (Blueprint $table) {
-            $table->foreignId('member_vid')->constrained('users', 'vid');
+            $table->foreignId('member_vid')->nullable()->constrained('users', 'vid');
         });
     }
 
