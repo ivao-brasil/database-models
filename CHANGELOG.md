@@ -1,3 +1,10 @@
+## [2.8.1](https://github.com/ivao-brasil/database-models/compare/v2.8.0...v2.8.1) (2022-09-25)
+
+
+### Bug Fixes
+
+* **migration:** fix exam migrations ([e1af175](https://github.com/ivao-brasil/database-models/commit/e1af175e68a7f191c9004eefec33e8aeff669a94))
+
 # [2.8.0](https://github.com/ivao-brasil/database-models/compare/v2.7.3...v2.8.0) (2022-09-25)
 
 
