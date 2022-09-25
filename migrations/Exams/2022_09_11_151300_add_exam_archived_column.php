@@ -13,7 +13,7 @@ class AddExamArchivedColumn extends Migration
      */
     public function up()
     {
-        Schema::create('exams', function (Blueprint $table) {
+        Schema::table('exams', function (Blueprint $table) {
             $table->boolean('archived')->default(0);
         });
     }
@@ -25,7 +25,7 @@ class AddExamArchivedColumn extends Migration
      */
     public function down()
     {
-        Schema::create('exams', function (Blueprint $table) {
+        Schema::table('exams', function (Blueprint $table) {
             $table->dropColumn('archived');
         });
     }
