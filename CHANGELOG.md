@@ -1,3 +1,10 @@
+# [2.8.0](https://github.com/ivao-brasil/database-models/compare/v2.7.3...v2.8.0) (2022-09-25)
+
+
+### Features
+
+* **exams:** add exam archiving ([fc23b08](https://github.com/ivao-brasil/database-models/commit/fc23b0848cec11f45de2710ae561b07362942c37))
+
 ## [2.7.3](https://github.com/ivao-brasil/database-models/compare/v2.7.2...v2.7.3) (2022-08-03)
 
 
