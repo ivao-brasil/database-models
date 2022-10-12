@@ -1,3 +1,10 @@
+# [2.9.0](https://github.com/ivao-brasil/database-models/compare/v2.8.1...v2.9.0) (2022-10-12)
+
+
+### Features
+
+* **tracker:** add flight type rule ([308a86e](https://github.com/ivao-brasil/database-models/commit/308a86eb51b70de46b94ee0d90ae2df5c5beaf6b))
+
 ## [2.8.1](https://github.com/ivao-brasil/database-models/compare/v2.8.0...v2.8.1) (2022-09-25)
 
 
