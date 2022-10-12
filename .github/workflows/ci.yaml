@@ -1,22 +1,24 @@
 name: CI
-on: [ push ]
+on:
+  push:
+    branches:
+      - main
+      - master
 
 jobs:
   publish:
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main'
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
       - name: Setup Node.js
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
           node-version: 16
       - name: Install semantic release
-        run: npm i -D --no-package-lock semantic-release @semantic-release/changelog @semantic-release/git
-      - name: Release
+        run: npm ci
+      - run: npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npx semantic-release
