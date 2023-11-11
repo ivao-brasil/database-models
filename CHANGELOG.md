@@ -1,3 +1,10 @@
+## [2.9.1](https://github.com/ivao-brasil/database-models/compare/v2.9.0...v2.9.1) (2023-11-11)
+
+
+### Bug Fixes
+
+* bump laravel version ([609271b](https://github.com/ivao-brasil/database-models/commit/609271b18af8f806f8e2b511abd876fdd507da30))
+
 # [2.9.0](https://github.com/ivao-brasil/database-models/compare/v2.8.1...v2.9.0) (2022-10-12)
 
 
