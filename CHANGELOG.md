@@ -1,3 +1,10 @@
+# [2.11.0](https://github.com/ivao-brasil/database-models/compare/v2.10.0...v2.11.0) (2024-11-12)
+
+
+### Features
+
+* adds support to laravel 9 for upgrading ([b8b70fe](https://github.com/ivao-brasil/database-models/commit/b8b70fe25cac0e2d70955c993ba0cdc2d4058532))
+
 # [2.10.0](https://github.com/ivao-brasil/database-models/compare/v2.9.1...v2.10.0) (2024-11-12)
 
 
