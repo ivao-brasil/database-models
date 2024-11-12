@@ -1,3 +1,10 @@
+# [2.10.0](https://github.com/ivao-brasil/database-models/compare/v2.9.1...v2.10.0) (2024-11-12)
+
+
+### Features
+
+* adds support to php 8.3 ([3a1f995](https://github.com/ivao-brasil/database-models/commit/3a1f995ba09a40970a224812a00cd221373e3b6a))
+
 ## [2.9.1](https://github.com/ivao-brasil/database-models/compare/v2.9.0...v2.9.1) (2023-11-11)
 
 
