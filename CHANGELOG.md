@@ -1,3 +1,10 @@
+# [2.12.0](https://github.com/ivao-brasil/database-models/compare/v2.11.0...v2.12.0) (2025-06-21)
+
+
+### Features
+
+* Add BSPG member and report indicators to users and reports ([efaef04](https://github.com/ivao-brasil/database-models/commit/efaef04596b294588e0cc18ea0704232284ac2d2))
+
 # [2.11.0](https://github.com/ivao-brasil/database-models/compare/v2.10.0...v2.11.0) (2024-11-12)
 
 
