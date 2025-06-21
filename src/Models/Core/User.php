@@ -14,11 +14,11 @@ class User extends Authenticatable
     public $incrementing = false;
 
     protected $fillable = [
-        'vid', 'firstName', 'lastName', 'atcRating', 'pilotRating', 'division', 'country', 'staff'
+        'vid', 'firstName', 'lastName', 'atcRating', 'pilotRating', 'division', 'country', 'staff', 'isBSPGMember'
     ];
 
     protected $visible = [
-        'vid', 'firstName', 'lastName', 'atcRating', 'pilotRating', 'division', 'country', 'staff'
+        'vid', 'firstName', 'lastName', 'atcRating', 'pilotRating', 'division', 'country', 'staff', 'isBSPGMember'
     ];
 
     protected $casts = [
