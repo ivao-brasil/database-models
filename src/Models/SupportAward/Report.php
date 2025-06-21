@@ -14,11 +14,11 @@ class Report extends Model
     use HasFactory;
 
     protected $fillable = [
-        "connectionType", "callsign", "status", "owner_vid", "session_id", "remarks"
+        "connectionType", "callsign", "status", "owner_vid", "session_id", "remarks", "isBSPGReport"
     ];
 
     protected $visible = [
-        "id", "connectionType", "callsign", "status", "session", "owner", "created_at", "updated_at", "session_id", "remarks"
+        "id", "connectionType", "callsign", "status", "session", "owner", "created_at", "updated_at", "session_id", "remarks", "isBSPGReport"
     ];
 
     public function session()
