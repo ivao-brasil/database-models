@@ -16,7 +16,7 @@ return new class extends Migration
         });
 
         Schema::table('reports', function (Blueprint $table) {
-            $table->boolean('isBSPGReport')->default(false)->after('staff');
+            $table->boolean('isBSPGReport')->default(false)->after('status');
         });
     }
 
