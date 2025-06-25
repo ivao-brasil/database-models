@@ -1,3 +1,10 @@
+## [2.12.1](https://github.com/ivao-brasil/database-models/compare/v2.12.0...v2.12.1) (2025-06-25)
+
+
+### Bug Fixes
+
+* correct column placement for isBSPGReport in reports table ([4b41d3d](https://github.com/ivao-brasil/database-models/commit/4b41d3dab129b991b8fa7cedb33521c8f4fa48e7))
+
 # [2.12.0](https://github.com/ivao-brasil/database-models/compare/v2.11.0...v2.12.0) (2025-06-21)
 
 
